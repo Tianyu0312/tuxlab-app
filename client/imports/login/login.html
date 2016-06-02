@@ -1,0 +1,10 @@
+<h1> Tuxlab Homepage </h1>
+<form [ngFormModel]="loginForm" (login)="doLogin($event)">
+	<input ngControl="email" type="email" placeholder="Username"><br>
+    <input ngControl="password" type="password" placeholder="Password"><br>
+	<button type="login">Log in</button>
+</form>
+<button (click)="clickedForget()">Forget Password</button>
+<button (click)="clickedSignUp()">Sign Up</button>
+
+
