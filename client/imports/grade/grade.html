@@ -1,9 +1,7 @@
 <div>
   <ul>
     <li *ngFor="let course of courses">
-      <a [href] = "['/course']"> {{course.number}} </a>
-      <!-- <a [routerLink] = "[/home]"> home </a> -->
-      <!-- <a [routerLink] = "[{courseID: course.number}]">{{course.number}}</a> -->
+      <a [routerLink]="['/GradeDetails', {courseID: course.number}]">{{course.number}}</a>
       <p>{{course.number}}</p>
       <p>{{course.name}}</p>
     </li>

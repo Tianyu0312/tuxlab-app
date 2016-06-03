@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import '../topbar.css';
 
 @Component({
   selector: 'account',
